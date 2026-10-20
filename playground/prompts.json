@@ -1,0 +1,47 @@
+[
+  {
+    "id": "seed0",
+    "text": "Maya loves pottery. Her birthday is 14 May. Remind me to message her that morning.",
+    "note": "example: explicit birthday reminder"
+  },
+  {
+    "id": "seed1",
+    "text": "Daniel starts his new job on 2 November 2026. Remind me to ask how it went the next day.",
+    "note": "example: anaphoric date"
+  },
+  {
+    "id": "seed2",
+    "text": "Alex has an interview sometime next week. I should check in afterwards.",
+    "note": "example: which Alex + vague date"
+  },
+  {
+    "id": "seed3",
+    "text": "Maya has her driving test on 12 November.",
+    "note": "example: implicit ask-how-it-went"
+  },
+  {
+    "id": "seed4",
+    "text": "Daniel's birthday is 14 May. He loves pottery.",
+    "note": "example: gift with interest context"
+  },
+  {
+    "id": "seed5",
+    "text": "Priya's mum is having surgery next week. She's worried.",
+    "note": "example: relative + check in"
+  },
+  {
+    "id": "seed6",
+    "text": "so um just got off the phone with tunde his sister's wedding is the 21st and he's best man and really nervous about the speech remind me to text him good luck the night before",
+    "note": "dictated, nested relation, wish luck"
+  },
+  {
+    "id": "seed7",
+    "text": "Coffee w/ Ines & Rafa - Ines moving to Lisbon end of Jan, Rafa's dad back in hospital :( he's vegetarian btw, bring something veggie sat",
+    "note": "shorthand, two people"
+  },
+  {
+    "id": "seed8",
+    "text": "Need to pick up the dry cleaning and renew the car insurance by Friday",
+    "note": "no people"
+  }
+]

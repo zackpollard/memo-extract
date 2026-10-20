@@ -1,0 +1,23 @@
+{
+  "encoder_outputs": [
+    "hidden",
+    "tags_entity",
+    "tags_action"
+  ],
+  "head_outputs": [
+    "attr_PERSON_pronoun",
+    "attr_EVENT_event_type",
+    "attr_EVENT_followup",
+    "attr_ACTION_action_type",
+    "attr_ACTION_timing",
+    "attr_FACT_fact_type",
+    "pointer_owner",
+    "pointer_anchor"
+  ],
+  "sizes": {
+    "encoder.fp32.onnx": 128733743,
+    "encoder.int8.onnx": 33034912,
+    "heads.fp32.onnx": 792816,
+    "heads.int8.onnx": 274092
+  }
+}

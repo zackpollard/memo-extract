@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Large binaries are attached to the GitHub release instead (docs/handoff.md, "Getting the models").
+# Git keeps code, data, run metadata, tokenizers and the int8 graphs of the three headline models.
+models/backbones/
+runs/**/model.pt
+models/onnx/*/*.onnx
+!models/onnx/bert-tiny-v8k-silver/*.int8.onnx
+!models/onnx/bert-mini-v8k-silver-kd/*.int8.onnx
+!models/onnx/minilm-l6/*.int8.onnx
+runs/**/*.safetensors
+runs/calib/*/tokenizer/

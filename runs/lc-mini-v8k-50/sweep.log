@@ -1,0 +1,281 @@
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/train.py --train data/interim/train_50.jsonl --dev data/dev.jsonl --out /home/zack/Source/memo-extract/runs/lc-mini-v8k-50 --threads 8 --backbone=models/backbones/bert-mini-v8k --lr=0.0003 --epochs=25
+train 5393 (rejected 0), dev 300 (rejected 0)
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 33015.03it/s]
+{"epoch": 1, "train_seconds": 18.1, "loss": 11.1874, "dev": {"strict_f1": 0.2835, "span_f1": 0.5139, "memo_exact": 0.0033, "by_type": {"ACTION": 0.184, "DATE": 0.615, "EVENT": 0.187, "FACT": 0.137, "INTEREST": 0.0, "PERSON": 0.871, "RELATION": 0.667}}}
+{"epoch": 2, "train_seconds": 18.2, "loss": 4.8085, "dev": {"strict_f1": 0.4545, "span_f1": 0.6695, "memo_exact": 0.0233, "by_type": {"ACTION": 0.451, "DATE": 0.76, "EVENT": 0.46, "FACT": 0.461, "INTEREST": 0.154, "PERSON": 0.942, "RELATION": 0.862}}}
+{"epoch": 3, "train_seconds": 18.3, "loss": 3.323, "dev": {"strict_f1": 0.5109, "span_f1": 0.7192, "memo_exact": 0.04, "by_type": {"ACTION": 0.514, "DATE": 0.805, "EVENT": 0.585, "FACT": 0.525, "INTEREST": 0.39, "PERSON": 0.942, "RELATION": 0.897}}}
+{"epoch": 4, "train_seconds": 17.9, "loss": 2.5767, "dev": {"strict_f1": 0.5626, "span_f1": 0.7465, "memo_exact": 0.0633, "by_type": {"ACTION": 0.64, "DATE": 0.812, "EVENT": 0.631, "FACT": 0.546, "INTEREST": 0.492, "PERSON": 0.965, "RELATION": 0.913}}}
+{"epoch": 5, "train_seconds": 18.5, "loss": 2.0386, "dev": {"strict_f1": 0.598, "span_f1": 0.7749, "memo_exact": 0.0867, "by_type": {"ACTION": 0.676, "DATE": 0.875, "EVENT": 0.666, "FACT": 0.57, "INTEREST": 0.49, "PERSON": 0.956, "RELATION": 0.914}}}
+{"epoch": 6, "train_seconds": 18.4, "loss": 1.7254, "dev": {"strict_f1": 0.6248, "span_f1": 0.7944, "memo_exact": 0.1067, "by_type": {"ACTION": 0.683, "DATE": 0.872, "EVENT": 0.695, "FACT": 0.607, "INTEREST": 0.551, "PERSON": 0.971, "RELATION": 0.909}}}
+{"epoch": 7, "train_seconds": 18.3, "loss": 1.4622, "dev": {"strict_f1": 0.6198, "span_f1": 0.7877, "memo_exact": 0.1133, "by_type": {"ACTION": 0.707, "DATE": 0.866, "EVENT": 0.657, "FACT": 0.61, "INTEREST": 0.581, "PERSON": 0.979, "RELATION": 0.916}}}
+{"epoch": 8, "train_seconds": 18.3, "loss": 1.2629, "dev": {"strict_f1": 0.6411, "span_f1": 0.8012, "memo_exact": 0.12, "by_type": {"ACTION": 0.718, "DATE": 0.873, "EVENT": 0.712, "FACT": 0.611, "INTEREST": 0.587, "PERSON": 0.983, "RELATION": 0.921}}}
+{"epoch": 9, "train_seconds": 16.9, "loss": 1.1101, "dev": {"strict_f1": 0.6414, "span_f1": 0.8037, "memo_exact": 0.1367, "by_type": {"ACTION": 0.763, "DATE": 0.879, "EVENT": 0.687, "FACT": 0.603, "INTEREST": 0.587, "PERSON": 0.991, "RELATION": 0.914}}}
+{"epoch": 10, "train_seconds": 18.3, "loss": 0.9875, "dev": {"strict_f1": 0.6694, "span_f1": 0.8236, "memo_exact": 0.1567, "by_type": {"ACTION": 0.773, "DATE": 0.886, "EVENT": 0.724, "FACT": 0.656, "INTEREST": 0.575, "PERSON": 0.983, "RELATION": 0.939}}}
+{"epoch": 11, "train_seconds": 17.8, "loss": 0.8646, "dev": {"strict_f1": 0.6709, "span_f1": 0.8219, "memo_exact": 0.1367, "by_type": {"ACTION": 0.735, "DATE": 0.902, "EVENT": 0.722, "FACT": 0.663, "INTEREST": 0.571, "PERSON": 0.986, "RELATION": 0.928}}}
+{"epoch": 12, "train_seconds": 18.4, "loss": 0.7867, "dev": {"strict_f1": 0.6802, "span_f1": 0.8324, "memo_exact": 0.16, "by_type": {"ACTION": 0.774, "DATE": 0.908, "EVENT": 0.744, "FACT": 0.653, "INTEREST": 0.607, "PERSON": 0.984, "RELATION": 0.942}}}
+{"epoch": 13, "train_seconds": 18.1, "loss": 0.6804, "dev": {"strict_f1": 0.6795, "span_f1": 0.8253, "memo_exact": 0.16, "by_type": {"ACTION": 0.787, "DATE": 0.9, "EVENT": 0.74, "FACT": 0.639, "INTEREST": 0.628, "PERSON": 0.981, "RELATION": 0.931}}}
+{"epoch": 14, "train_seconds": 18.4, "loss": 0.617, "dev": {"strict_f1": 0.687, "span_f1": 0.8297, "memo_exact": 0.17, "by_type": {"ACTION": 0.792, "DATE": 0.904, "EVENT": 0.74, "FACT": 0.638, "INTEREST": 0.654, "PERSON": 0.987, "RELATION": 0.926}}}
+{"epoch": 15, "train_seconds": 18.4, "loss": 0.5694, "dev": {"strict_f1": 0.694, "span_f1": 0.836, "memo_exact": 0.17, "by_type": {"ACTION": 0.793, "DATE": 0.906, "EVENT": 0.757, "FACT": 0.643, "INTEREST": 0.653, "PERSON": 0.987, "RELATION": 0.935}}}
+{"epoch": 16, "train_seconds": 18.2, "loss": 0.5037, "dev": {"strict_f1": 0.6898, "span_f1": 0.8331, "memo_exact": 0.1833, "by_type": {"ACTION": 0.782, "DATE": 0.909, "EVENT": 0.744, "FACT": 0.647, "INTEREST": 0.671, "PERSON": 0.988, "RELATION": 0.935}}}
+{"epoch": 17, "train_seconds": 17.9, "loss": 0.4618, "dev": {"strict_f1": 0.7, "span_f1": 0.8394, "memo_exact": 0.2033, "by_type": {"ACTION": 0.804, "DATE": 0.9, "EVENT": 0.759, "FACT": 0.669, "INTEREST": 0.646, "PERSON": 0.989, "RELATION": 0.928}}}
+{"epoch": 18, "train_seconds": 18.4, "loss": 0.4053, "dev": {"strict_f1": 0.6963, "span_f1": 0.8412, "memo_exact": 0.19, "by_type": {"ACTION": 0.801, "DATE": 0.909, "EVENT": 0.751, "FACT": 0.672, "INTEREST": 0.703, "PERSON": 0.986, "RELATION": 0.925}}}
+{"epoch": 19, "train_seconds": 18.0, "loss": 0.3782, "dev": {"strict_f1": 0.7172, "span_f1": 0.8519, "memo_exact": 0.2133, "by_type": {"ACTION": 0.813, "DATE": 0.918, "EVENT": 0.779, "FACT": 0.682, "INTEREST": 0.662, "PERSON": 0.991, "RELATION": 0.945}}}
+{"epoch": 20, "train_seconds": 16.6, "loss": 0.3409, "dev": {"strict_f1": 0.7174, "span_f1": 0.8455, "memo_exact": 0.2, "by_type": {"ACTION": 0.788, "DATE": 0.929, "EVENT": 0.764, "FACT": 0.659, "INTEREST": 0.68, "PERSON": 0.989, "RELATION": 0.939}}}
+{"epoch": 21, "train_seconds": 18.3, "loss": 0.3107, "dev": {"strict_f1": 0.7198, "span_f1": 0.8503, "memo_exact": 0.2133, "by_type": {"ACTION": 0.798, "DATE": 0.925, "EVENT": 0.778, "FACT": 0.677, "INTEREST": 0.685, "PERSON": 0.984, "RELATION": 0.938}}}
+{"epoch": 22, "train_seconds": 18.3, "loss": 0.2947, "dev": {"strict_f1": 0.7234, "span_f1": 0.854, "memo_exact": 0.2267, "by_type": {"ACTION": 0.81, "DATE": 0.924, "EVENT": 0.779, "FACT": 0.683, "INTEREST": 0.694, "PERSON": 0.989, "RELATION": 0.938}}}
+{"epoch": 23, "train_seconds": 18.0, "loss": 0.2738, "dev": {"strict_f1": 0.722, "span_f1": 0.8547, "memo_exact": 0.2067, "by_type": {"ACTION": 0.816, "DATE": 0.922, "EVENT": 0.781, "FACT": 0.688, "INTEREST": 0.697, "PERSON": 0.991, "RELATION": 0.93}}}
+{"epoch": 24, "train_seconds": 18.4, "loss": 0.2549, "dev": {"strict_f1": 0.725, "span_f1": 0.854, "memo_exact": 0.2133, "by_type": {"ACTION": 0.821, "DATE": 0.923, "EVENT": 0.778, "FACT": 0.685, "INTEREST": 0.68, "PERSON": 0.991, "RELATION": 0.93}}}
+{"epoch": 25, "train_seconds": 18.0, "loss": 0.2432, "dev": {"strict_f1": 0.7283, "span_f1": 0.8546, "memo_exact": 0.21, "by_type": {"ACTION": 0.822, "DATE": 0.926, "EVENT": 0.778, "FACT": 0.682, "INTEREST": 0.675, "PERSON": 0.991, "RELATION": 0.934}}}
+best strict dev F1 0.7283
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/export.py /home/zack/Source/memo-extract/runs/lc-mini-v8k-50 --out /home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50
+[0;93m2026-10-20 06:25:47.978794823 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+/home/zack/Source/memo-extract/memo_extract/export.py:61: UserWarning: Exporting a model while it is in training mode. Please ensure that this is intended, as it may lead to different behavior during inference. Calling model.eval() before export is recommended.
+  torch.onnx.export(
+W1020 06:25:50.567000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+W1020 06:25:50.568000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_align
+W1020 06:25:50.568000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_pool
+W1020 06:25:50.568000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::deform_conv2d
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: batch will not be used, since it shares the same shape constraints with another axis: batch.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: tokens will not be used, since it shares the same shape constraints with another axis: tokens.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/memo_extract/export.py:66: UserWarning: Exporting a model while it is in training mode. Please ensure that this is intended, as it may lead to different behavior during inference. Calling model.eval() before export is recommended.
+  torch.onnx.export(
+W1020 06:25:52.543000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+W1020 06:25:52.543000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_align
+W1020 06:25:52.543000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_pool
+W1020 06:25:52.543000 966060 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::deform_conv2d
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: batch will not be used, since it shares the same shape constraints with another axis: batch.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: spans will not be used, since it shares the same shape constraints with another axis: spans.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+[torch.onnx] Obtain model graph for `EncoderGraph([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `EncoderGraph([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decompositions...
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+[torch.onnx] Obtain model graph for `HeadsGraph([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `HeadsGraph([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decompositions...
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+/home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50/encoder.fp32.onnx: 29.22 MB
+/home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50/encoder.int8.onnx: 7.73 MB
+/home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50/heads.fp32.onnx: 0.66 MB
+/home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50/heads.int8.onnx: 0.24 MB
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/runs/lc-mini-v8k-50 --data data/test.jsonl --kind torch --threads 8 --write
+[0;93m2026-10-20 06:25:57.047480369 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "torch",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.723,
+  "span_f1": 0.8446,
+  "memo_exact": 0.264,
+  "reminder_f1": 0.5653,
+  "reminder_intent_f1": 0.6826,
+  "detail_f1": 0.691,
+  "people_f1": 0.9579,
+  "suggestions_fully_right": 0.324,
+  "latency_ms_1thread": 4.62,
+  "by_type": {
+    "ACTION": 0.8275,
+    "DATE": 0.8718,
+    "EVENT": 0.7712,
+    "FACT": 0.6901,
+    "INTEREST": 0.7513,
+    "PERSON": 0.9828,
+    "RELATION": 0.9414
+  },
+  "by_style": {
+    "dictated": 0.7371,
+    "mixed": 0.7451,
+    "recap": 0.7095,
+    "shorthand": 0.648,
+    "typed-quick": 0.7151,
+    "typed-tidy": 0.8131
+  },
+  "checks": {
+    "ACTION.action_type": 0.9404,
+    "ACTION.timing": 0.8043,
+    "EVENT.event_type": 0.9618,
+    "EVENT.followup": 0.8855,
+    "FACT.fact_type": 0.9765,
+    "PERSON.pronoun": 0.9503,
+    "anchor:ACTION": 0.7404,
+    "anchor:DATE": 0.8109,
+    "owner:ACTION": 0.9149,
+    "owner:EVENT": 0.9427,
+    "owner:FACT": 0.9608,
+    "owner:INTEREST": 0.9014,
+    "owner:PERSON": 0.9799,
+    "owner:RELATION": 0.9631
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50 --data data/test.jsonl --kind onnx-int8 --threads 8 --write
+[0;93m2026-10-20 06:26:02.310485397 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "onnx-int8",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.7163,
+  "span_f1": 0.8408,
+  "memo_exact": 0.252,
+  "reminder_f1": 0.5593,
+  "reminder_intent_f1": 0.685,
+  "detail_f1": 0.6753,
+  "people_f1": 0.96,
+  "suggestions_fully_right": 0.306,
+  "latency_ms_1thread": 1.67,
+  "by_type": {
+    "ACTION": 0.8147,
+    "DATE": 0.8863,
+    "EVENT": 0.7504,
+    "FACT": 0.6851,
+    "INTEREST": 0.7128,
+    "PERSON": 0.9868,
+    "RELATION": 0.9368
+  },
+  "by_style": {
+    "dictated": 0.7292,
+    "mixed": 0.728,
+    "recap": 0.727,
+    "shorthand": 0.6463,
+    "typed-quick": 0.7031,
+    "typed-tidy": 0.8069
+  },
+  "checks": {
+    "ACTION.action_type": 0.9442,
+    "ACTION.timing": 0.7983,
+    "EVENT.event_type": 0.9613,
+    "EVENT.followup": 0.8859,
+    "FACT.fact_type": 0.9766,
+    "PERSON.pronoun": 0.9504,
+    "anchor:ACTION": 0.7682,
+    "anchor:DATE": 0.792,
+    "owner:ACTION": 0.9142,
+    "owner:EVENT": 0.9497,
+    "owner:FACT": 0.9455,
+    "owner:INTEREST": 0.8955,
+    "owner:PERSON": 0.9826,
+    "owner:RELATION": 0.9628
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/runs/lc-mini-v8k-50 --data data/test.jsonl --kind torch --threads 8 --write
+[0;93m2026-10-20 11:45:59.146844483 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "torch",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.723,
+  "span_f1": 0.8446,
+  "memo_exact": 0.264,
+  "reminder_f1": 0.5653,
+  "reminder_intent_f1": 0.6826,
+  "detail_f1": 0.691,
+  "people_f1": 0.9579,
+  "suggestions_fully_right": 0.324,
+  "latency_ms_1thread": 2.9,
+  "by_type": {
+    "ACTION": 0.8275,
+    "DATE": 0.8718,
+    "EVENT": 0.7712,
+    "FACT": 0.6901,
+    "INTEREST": 0.7513,
+    "PERSON": 0.9828,
+    "RELATION": 0.9414
+  },
+  "by_style": {
+    "dictated": 0.7371,
+    "mixed": 0.7451,
+    "recap": 0.7095,
+    "shorthand": 0.648,
+    "typed-quick": 0.7151,
+    "typed-tidy": 0.8131
+  },
+  "checks": {
+    "ACTION.action_type": 0.9404,
+    "ACTION.timing": 0.8043,
+    "EVENT.event_type": 0.9618,
+    "EVENT.followup": 0.8855,
+    "FACT.fact_type": 0.9765,
+    "PERSON.pronoun": 0.9503,
+    "anchor:ACTION": 0.7404,
+    "anchor:DATE": 0.8109,
+    "owner:ACTION": 0.9149,
+    "owner:EVENT": 0.9427,
+    "owner:FACT": 0.9608,
+    "owner:INTEREST": 0.9014,
+    "owner:PERSON": 0.9799,
+    "owner:RELATION": 0.9631
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/models/onnx/lc-mini-v8k-50 --data data/test.jsonl --kind onnx-int8 --threads 8 --write
+[0;93m2026-10-20 11:46:03.006264943 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "onnx-int8",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.7163,
+  "span_f1": 0.8408,
+  "memo_exact": 0.252,
+  "reminder_f1": 0.5593,
+  "reminder_intent_f1": 0.685,
+  "detail_f1": 0.6753,
+  "people_f1": 0.96,
+  "suggestions_fully_right": 0.306,
+  "latency_ms_1thread": 1.28,
+  "by_type": {
+    "ACTION": 0.8147,
+    "DATE": 0.8863,
+    "EVENT": 0.7504,
+    "FACT": 0.6851,
+    "INTEREST": 0.7128,
+    "PERSON": 0.9868,
+    "RELATION": 0.9368
+  },
+  "by_style": {
+    "dictated": 0.7292,
+    "mixed": 0.728,
+    "recap": 0.727,
+    "shorthand": 0.6463,
+    "typed-quick": 0.7031,
+    "typed-tidy": 0.8069
+  },
+  "checks": {
+    "ACTION.action_type": 0.9442,
+    "ACTION.timing": 0.7983,
+    "EVENT.event_type": 0.9613,
+    "EVENT.followup": 0.8859,
+    "FACT.fact_type": 0.9766,
+    "PERSON.pronoun": 0.9504,
+    "anchor:ACTION": 0.7682,
+    "anchor:DATE": 0.792,
+    "owner:ACTION": 0.9142,
+    "owner:EVENT": 0.9497,
+    "owner:FACT": 0.9455,
+    "owner:INTEREST": 0.8955,
+    "owner:PERSON": 0.9826,
+    "owner:RELATION": 0.9628
+  }
+}

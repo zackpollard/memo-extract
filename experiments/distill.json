@@ -1,0 +1,7 @@
+[
+  {"name": "bert-tiny-v8k-silver", "backbone": "models/backbones/bert-tiny-v8k", "train_files": ["data/train.jsonl", "data/silver.jsonl"], "lr": 0.001, "epochs": 12},
+  {"name": "bert-tiny-v8k-silver-kd", "backbone": "models/backbones/bert-tiny-v8k", "train_files": ["data/train.jsonl", "data/silver.jsonl"], "teacher": "runs/minilm-l6", "distill_weight": 0.5, "lr": 0.001, "epochs": 12},
+  {"name": "bert-tiny-v8k-kd", "backbone": "models/backbones/bert-tiny-v8k", "teacher": "runs/minilm-l6", "distill_weight": 0.5, "lr": 0.001, "epochs": 30},
+  {"name": "bert-mini-v8k-silver", "backbone": "models/backbones/bert-mini-v8k", "train_files": ["data/train.jsonl", "data/silver.jsonl"], "lr": 0.0003, "epochs": 10},
+  {"name": "bert-mini-v8k-silver-kd", "backbone": "models/backbones/bert-mini-v8k", "train_files": ["data/train.jsonl", "data/silver.jsonl"], "teacher": "runs/minilm-l6", "distill_weight": 0.5, "lr": 0.0003, "epochs": 10}
+]

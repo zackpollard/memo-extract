@@ -1,0 +1,284 @@
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/train.py --train data/train.jsonl --dev data/dev.jsonl --out /home/zack/Source/memo-extract/runs/bert-tiny-v8k --threads 8 --backbone=models/backbones/bert-tiny-v8k --lr=0.001 --epochs=30
+train 10787 (rejected 0), dev 300 (rejected 0)
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 48931.46it/s]
+{"epoch": 1, "train_seconds": 11.5, "loss": 10.5856, "dev": {"strict_f1": 0.2723, "span_f1": 0.4868, "memo_exact": 0.01, "by_type": {"ACTION": 0.119, "DATE": 0.587, "EVENT": 0.201, "FACT": 0.118, "INTEREST": 0.0, "PERSON": 0.839, "RELATION": 0.638}}}
+{"epoch": 2, "train_seconds": 11.7, "loss": 4.6774, "dev": {"strict_f1": 0.4098, "span_f1": 0.6215, "memo_exact": 0.0333, "by_type": {"ACTION": 0.353, "DATE": 0.671, "EVENT": 0.4, "FACT": 0.434, "INTEREST": 0.263, "PERSON": 0.925, "RELATION": 0.827}}}
+{"epoch": 3, "train_seconds": 11.6, "loss": 3.5534, "dev": {"strict_f1": 0.4705, "span_f1": 0.6719, "memo_exact": 0.0533, "by_type": {"ACTION": 0.427, "DATE": 0.73, "EVENT": 0.521, "FACT": 0.482, "INTEREST": 0.388, "PERSON": 0.944, "RELATION": 0.876}}}
+{"epoch": 4, "train_seconds": 11.5, "loss": 2.8111, "dev": {"strict_f1": 0.5108, "span_f1": 0.69, "memo_exact": 0.0733, "by_type": {"ACTION": 0.502, "DATE": 0.712, "EVENT": 0.6, "FACT": 0.488, "INTEREST": 0.466, "PERSON": 0.952, "RELATION": 0.848}}}
+{"epoch": 5, "train_seconds": 10.4, "loss": 2.4288, "dev": {"strict_f1": 0.5455, "span_f1": 0.7026, "memo_exact": 0.07, "by_type": {"ACTION": 0.537, "DATE": 0.707, "EVENT": 0.614, "FACT": 0.51, "INTEREST": 0.533, "PERSON": 0.961, "RELATION": 0.898}}}
+{"epoch": 6, "train_seconds": 11.9, "loss": 2.1229, "dev": {"strict_f1": 0.5455, "span_f1": 0.7217, "memo_exact": 0.0567, "by_type": {"ACTION": 0.536, "DATE": 0.781, "EVENT": 0.625, "FACT": 0.515, "INTEREST": 0.515, "PERSON": 0.961, "RELATION": 0.893}}}
+{"epoch": 7, "train_seconds": 13.0, "loss": 1.8715, "dev": {"strict_f1": 0.5683, "span_f1": 0.7275, "memo_exact": 0.07, "by_type": {"ACTION": 0.53, "DATE": 0.73, "EVENT": 0.653, "FACT": 0.564, "INTEREST": 0.539, "PERSON": 0.965, "RELATION": 0.901}}}
+{"epoch": 8, "train_seconds": 16.4, "loss": 1.6869, "dev": {"strict_f1": 0.5872, "span_f1": 0.7444, "memo_exact": 0.0933, "by_type": {"ACTION": 0.571, "DATE": 0.777, "EVENT": 0.653, "FACT": 0.556, "INTEREST": 0.577, "PERSON": 0.97, "RELATION": 0.932}}}
+{"epoch": 9, "train_seconds": 16.1, "loss": 1.5254, "dev": {"strict_f1": 0.5881, "span_f1": 0.7406, "memo_exact": 0.1033, "by_type": {"ACTION": 0.594, "DATE": 0.791, "EVENT": 0.63, "FACT": 0.54, "INTEREST": 0.5, "PERSON": 0.968, "RELATION": 0.921}}}
+{"epoch": 10, "train_seconds": 15.3, "loss": 1.4038, "dev": {"strict_f1": 0.6105, "span_f1": 0.7524, "memo_exact": 0.09, "by_type": {"ACTION": 0.594, "DATE": 0.79, "EVENT": 0.644, "FACT": 0.585, "INTEREST": 0.537, "PERSON": 0.969, "RELATION": 0.927}}}
+{"epoch": 11, "train_seconds": 15.6, "loss": 1.2972, "dev": {"strict_f1": 0.6194, "span_f1": 0.7678, "memo_exact": 0.0967, "by_type": {"ACTION": 0.645, "DATE": 0.809, "EVENT": 0.659, "FACT": 0.592, "INTEREST": 0.591, "PERSON": 0.983, "RELATION": 0.931}}}
+{"epoch": 12, "train_seconds": 14.9, "loss": 1.2087, "dev": {"strict_f1": 0.6361, "span_f1": 0.7793, "memo_exact": 0.1233, "by_type": {"ACTION": 0.659, "DATE": 0.825, "EVENT": 0.689, "FACT": 0.584, "INTEREST": 0.654, "PERSON": 0.975, "RELATION": 0.936}}}
+{"epoch": 13, "train_seconds": 15.9, "loss": 1.0988, "dev": {"strict_f1": 0.6408, "span_f1": 0.7896, "memo_exact": 0.1267, "by_type": {"ACTION": 0.662, "DATE": 0.839, "EVENT": 0.693, "FACT": 0.621, "INTEREST": 0.625, "PERSON": 0.98, "RELATION": 0.944}}}
+{"epoch": 14, "train_seconds": 16.2, "loss": 1.0209, "dev": {"strict_f1": 0.6408, "span_f1": 0.7831, "memo_exact": 0.1467, "by_type": {"ACTION": 0.647, "DATE": 0.832, "EVENT": 0.715, "FACT": 0.591, "INTEREST": 0.61, "PERSON": 0.976, "RELATION": 0.934}}}
+{"epoch": 15, "train_seconds": 16.8, "loss": 0.9733, "dev": {"strict_f1": 0.6431, "span_f1": 0.79, "memo_exact": 0.12, "by_type": {"ACTION": 0.66, "DATE": 0.86, "EVENT": 0.69, "FACT": 0.612, "INTEREST": 0.622, "PERSON": 0.976, "RELATION": 0.93}}}
+{"epoch": 16, "train_seconds": 15.7, "loss": 0.8972, "dev": {"strict_f1": 0.6581, "span_f1": 0.7996, "memo_exact": 0.1333, "by_type": {"ACTION": 0.646, "DATE": 0.837, "EVENT": 0.726, "FACT": 0.647, "INTEREST": 0.667, "PERSON": 0.984, "RELATION": 0.934}}}
+{"epoch": 17, "train_seconds": 16.4, "loss": 0.8398, "dev": {"strict_f1": 0.647, "span_f1": 0.7928, "memo_exact": 0.1333, "by_type": {"ACTION": 0.699, "DATE": 0.844, "EVENT": 0.681, "FACT": 0.625, "INTEREST": 0.667, "PERSON": 0.98, "RELATION": 0.93}}}
+{"epoch": 18, "train_seconds": 15.7, "loss": 0.7992, "dev": {"strict_f1": 0.6498, "span_f1": 0.796, "memo_exact": 0.1433, "by_type": {"ACTION": 0.67, "DATE": 0.849, "EVENT": 0.699, "FACT": 0.642, "INTEREST": 0.624, "PERSON": 0.982, "RELATION": 0.925}}}
+{"epoch": 19, "train_seconds": 12.0, "loss": 0.7507, "dev": {"strict_f1": 0.658, "span_f1": 0.8013, "memo_exact": 0.16, "by_type": {"ACTION": 0.691, "DATE": 0.851, "EVENT": 0.707, "FACT": 0.646, "INTEREST": 0.614, "PERSON": 0.982, "RELATION": 0.938}}}
+{"epoch": 20, "train_seconds": 11.8, "loss": 0.6947, "dev": {"strict_f1": 0.6696, "span_f1": 0.8077, "memo_exact": 0.1767, "by_type": {"ACTION": 0.689, "DATE": 0.865, "EVENT": 0.732, "FACT": 0.633, "INTEREST": 0.619, "PERSON": 0.98, "RELATION": 0.938}}}
+{"epoch": 21, "train_seconds": 15.7, "loss": 0.6536, "dev": {"strict_f1": 0.6658, "span_f1": 0.8062, "memo_exact": 0.16, "by_type": {"ACTION": 0.688, "DATE": 0.861, "EVENT": 0.724, "FACT": 0.645, "INTEREST": 0.62, "PERSON": 0.982, "RELATION": 0.937}}}
+{"epoch": 22, "train_seconds": 15.5, "loss": 0.6198, "dev": {"strict_f1": 0.686, "span_f1": 0.8182, "memo_exact": 0.18, "by_type": {"ACTION": 0.688, "DATE": 0.873, "EVENT": 0.753, "FACT": 0.654, "INTEREST": 0.646, "PERSON": 0.982, "RELATION": 0.945}}}
+{"epoch": 23, "train_seconds": 15.4, "loss": 0.5839, "dev": {"strict_f1": 0.677, "span_f1": 0.8153, "memo_exact": 0.1767, "by_type": {"ACTION": 0.732, "DATE": 0.863, "EVENT": 0.731, "FACT": 0.653, "INTEREST": 0.641, "PERSON": 0.986, "RELATION": 0.934}}}
+{"epoch": 24, "train_seconds": 13.3, "loss": 0.555, "dev": {"strict_f1": 0.6735, "span_f1": 0.8124, "memo_exact": 0.1733, "by_type": {"ACTION": 0.715, "DATE": 0.869, "EVENT": 0.72, "FACT": 0.647, "INTEREST": 0.654, "PERSON": 0.981, "RELATION": 0.949}}}
+{"epoch": 25, "train_seconds": 15.2, "loss": 0.5149, "dev": {"strict_f1": 0.6718, "span_f1": 0.8117, "memo_exact": 0.1567, "by_type": {"ACTION": 0.693, "DATE": 0.871, "EVENT": 0.729, "FACT": 0.646, "INTEREST": 0.646, "PERSON": 0.981, "RELATION": 0.942}}}
+{"epoch": 26, "train_seconds": 14.8, "loss": 0.4862, "dev": {"strict_f1": 0.689, "span_f1": 0.8187, "memo_exact": 0.1833, "by_type": {"ACTION": 0.719, "DATE": 0.868, "EVENT": 0.744, "FACT": 0.66, "INTEREST": 0.633, "PERSON": 0.981, "RELATION": 0.949}}}
+{"epoch": 27, "train_seconds": 14.1, "loss": 0.468, "dev": {"strict_f1": 0.6833, "span_f1": 0.8178, "memo_exact": 0.17, "by_type": {"ACTION": 0.733, "DATE": 0.876, "EVENT": 0.731, "FACT": 0.642, "INTEREST": 0.645, "PERSON": 0.986, "RELATION": 0.949}}}
+{"epoch": 28, "train_seconds": 13.7, "loss": 0.4534, "dev": {"strict_f1": 0.684, "span_f1": 0.8196, "memo_exact": 0.17, "by_type": {"ACTION": 0.732, "DATE": 0.878, "EVENT": 0.736, "FACT": 0.648, "INTEREST": 0.636, "PERSON": 0.982, "RELATION": 0.953}}}
+{"epoch": 29, "train_seconds": 15.7, "loss": 0.4347, "dev": {"strict_f1": 0.6921, "span_f1": 0.8224, "memo_exact": 0.1733, "by_type": {"ACTION": 0.738, "DATE": 0.88, "EVENT": 0.743, "FACT": 0.652, "INTEREST": 0.632, "PERSON": 0.982, "RELATION": 0.953}}}
+{"epoch": 30, "train_seconds": 16.3, "loss": 0.4301, "dev": {"strict_f1": 0.6898, "span_f1": 0.8215, "memo_exact": 0.17, "by_type": {"ACTION": 0.726, "DATE": 0.881, "EVENT": 0.742, "FACT": 0.647, "INTEREST": 0.632, "PERSON": 0.986, "RELATION": 0.953}}}
+best strict dev F1 0.6921
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/export.py /home/zack/Source/memo-extract/runs/bert-tiny-v8k --out /home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k
+[0;93m2026-10-20 05:22:56.385231908 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+/home/zack/Source/memo-extract/memo_extract/export.py:61: UserWarning: Exporting a model while it is in training mode. Please ensure that this is intended, as it may lead to different behavior during inference. Calling model.eval() before export is recommended.
+  torch.onnx.export(
+W1020 05:22:59.097000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+W1020 05:22:59.098000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_align
+W1020 05:22:59.098000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_pool
+W1020 05:22:59.098000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::deform_conv2d
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: batch will not be used, since it shares the same shape constraints with another axis: batch.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: tokens will not be used, since it shares the same shape constraints with another axis: tokens.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/memo_extract/export.py:66: UserWarning: Exporting a model while it is in training mode. Please ensure that this is intended, as it may lead to different behavior during inference. Calling model.eval() before export is recommended.
+  torch.onnx.export(
+W1020 05:23:01.179000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+W1020 05:23:01.179000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_align
+W1020 05:23:01.179000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::roi_pool
+W1020 05:23:01.180000 893499 .venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_registration.py:107] torchvision is not installed. Skipping torchvision::deform_conv2d
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: batch will not be used, since it shares the same shape constraints with another axis: batch.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+/home/zack/Source/memo-extract/.venv/lib/python3.13/site-packages/torch/onnx/_internal/exporter/_onnx_program.py:486: UserWarning: # The axis name: spans will not be used, since it shares the same shape constraints with another axis: spans.
+  rename_mapping = _dynamic_shapes.create_rename_mapping(
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+[torch.onnx] Obtain model graph for `EncoderGraph([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `EncoderGraph([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decompositions...
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+[torch.onnx] Obtain model graph for `HeadsGraph([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `HeadsGraph([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decompositions...
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+/home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k/encoder.fp32.onnx: 9.91 MB
+/home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k/encoder.int8.onnx: 2.70 MB
+/home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k/heads.fp32.onnx: 0.53 MB
+/home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k/heads.int8.onnx: 0.21 MB
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/runs/bert-tiny-v8k --data data/test.jsonl --kind torch --threads 8 --write
+[0;93m2026-10-20 05:23:05.844214103 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "torch",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.6776,
+  "span_f1": 0.8086,
+  "memo_exact": 0.204,
+  "reminder_f1": 0.511,
+  "detail_f1": 0.6394,
+  "people_f1": 0.9399,
+  "suggestions_fully_right": 0.248,
+  "latency_ms_1thread": 1.56,
+  "by_type": {
+    "ACTION": 0.7247,
+    "DATE": 0.8529,
+    "EVENT": 0.7306,
+    "FACT": 0.6271,
+    "INTEREST": 0.7072,
+    "PERSON": 0.9769,
+    "RELATION": 0.9123
+  },
+  "by_style": {
+    "dictated": 0.6869,
+    "mixed": 0.7306,
+    "recap": 0.606,
+    "shorthand": 0.635,
+    "typed-quick": 0.6738,
+    "typed-tidy": 0.7577
+  },
+  "checks": {
+    "ACTION.action_type": 0.9519,
+    "ACTION.timing": 0.8221,
+    "EVENT.event_type": 0.9702,
+    "EVENT.followup": 0.8748,
+    "FACT.fact_type": 0.9857,
+    "PERSON.pronoun": 0.9107,
+    "anchor:ACTION": 0.7404,
+    "anchor:DATE": 0.7868,
+    "owner:ACTION": 0.8942,
+    "owner:EVENT": 0.9423,
+    "owner:FACT": 0.9456,
+    "owner:INTEREST": 0.875,
+    "owner:PERSON": 0.9824,
+    "owner:RELATION": 0.9279
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k --data data/test.jsonl --kind onnx-int8 --threads 8 --write
+[0;93m2026-10-20 05:23:09.776918662 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "onnx-int8",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.6736,
+  "span_f1": 0.8073,
+  "memo_exact": 0.196,
+  "reminder_f1": 0.5057,
+  "detail_f1": 0.6377,
+  "people_f1": 0.941,
+  "suggestions_fully_right": 0.242,
+  "latency_ms_1thread": 0.78,
+  "by_type": {
+    "ACTION": 0.719,
+    "DATE": 0.8474,
+    "EVENT": 0.7321,
+    "FACT": 0.6264,
+    "INTEREST": 0.7039,
+    "PERSON": 0.9775,
+    "RELATION": 0.9119
+  },
+  "by_style": {
+    "dictated": 0.6836,
+    "mixed": 0.7293,
+    "recap": 0.5962,
+    "shorthand": 0.6239,
+    "typed-quick": 0.6713,
+    "typed-tidy": 0.7577
+  },
+  "checks": {
+    "ACTION.action_type": 0.9466,
+    "ACTION.timing": 0.8204,
+    "EVENT.event_type": 0.97,
+    "EVENT.followup": 0.876,
+    "FACT.fact_type": 0.9856,
+    "PERSON.pronoun": 0.9081,
+    "anchor:ACTION": 0.733,
+    "anchor:DATE": 0.7811,
+    "owner:ACTION": 0.8932,
+    "owner:EVENT": 0.942,
+    "owner:FACT": 0.9424,
+    "owner:INTEREST": 0.8571,
+    "owner:PERSON": 0.9851,
+    "owner:RELATION": 0.9324
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/runs/bert-tiny-v8k --data data/test.jsonl --kind torch --threads 8 --write
+[0;93m2026-10-20 11:44:52.985291800 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "torch",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.6776,
+  "span_f1": 0.8086,
+  "memo_exact": 0.204,
+  "reminder_f1": 0.5278,
+  "reminder_intent_f1": 0.6536,
+  "detail_f1": 0.6394,
+  "people_f1": 0.9399,
+  "suggestions_fully_right": 0.248,
+  "latency_ms_1thread": 1.26,
+  "by_type": {
+    "ACTION": 0.7247,
+    "DATE": 0.8529,
+    "EVENT": 0.7306,
+    "FACT": 0.6271,
+    "INTEREST": 0.7072,
+    "PERSON": 0.9769,
+    "RELATION": 0.9123
+  },
+  "by_style": {
+    "dictated": 0.6869,
+    "mixed": 0.7306,
+    "recap": 0.606,
+    "shorthand": 0.635,
+    "typed-quick": 0.6738,
+    "typed-tidy": 0.7577
+  },
+  "checks": {
+    "ACTION.action_type": 0.9519,
+    "ACTION.timing": 0.8221,
+    "EVENT.event_type": 0.9702,
+    "EVENT.followup": 0.8748,
+    "FACT.fact_type": 0.9857,
+    "PERSON.pronoun": 0.9107,
+    "anchor:ACTION": 0.7404,
+    "anchor:DATE": 0.7868,
+    "owner:ACTION": 0.8942,
+    "owner:EVENT": 0.9423,
+    "owner:FACT": 0.9456,
+    "owner:INTEREST": 0.875,
+    "owner:PERSON": 0.9824,
+    "owner:RELATION": 0.9279
+  }
+}
+$ /home/zack/Source/memo-extract/.venv/bin/python tools/evaluate.py /home/zack/Source/memo-extract/models/onnx/bert-tiny-v8k --data data/test.jsonl --kind onnx-int8 --threads 8 --write
+[0;93m2026-10-20 11:44:56.042728222 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{
+  "kind": "onnx-int8",
+  "data": [
+    "data/test.jsonl"
+  ],
+  "memos": 500,
+  "rejected": 0,
+  "strict_f1": 0.6736,
+  "span_f1": 0.8073,
+  "memo_exact": 0.196,
+  "reminder_f1": 0.5212,
+  "reminder_intent_f1": 0.6445,
+  "detail_f1": 0.6377,
+  "people_f1": 0.941,
+  "suggestions_fully_right": 0.242,
+  "latency_ms_1thread": 0.7,
+  "by_type": {
+    "ACTION": 0.719,
+    "DATE": 0.8474,
+    "EVENT": 0.7321,
+    "FACT": 0.6264,
+    "INTEREST": 0.7039,
+    "PERSON": 0.9775,
+    "RELATION": 0.9119
+  },
+  "by_style": {
+    "dictated": 0.6836,
+    "mixed": 0.7293,
+    "recap": 0.5962,
+    "shorthand": 0.6239,
+    "typed-quick": 0.6713,
+    "typed-tidy": 0.7577
+  },
+  "checks": {
+    "ACTION.action_type": 0.9466,
+    "ACTION.timing": 0.8204,
+    "EVENT.event_type": 0.97,
+    "EVENT.followup": 0.876,
+    "FACT.fact_type": 0.9856,
+    "PERSON.pronoun": 0.9081,
+    "anchor:ACTION": 0.733,
+    "anchor:DATE": 0.7811,
+    "owner:ACTION": 0.8932,
+    "owner:EVENT": 0.942,
+    "owner:FACT": 0.9424,
+    "owner:INTEREST": 0.8571,
+    "owner:PERSON": 0.9851,
+    "owner:RELATION": 0.9324
+  }
+}

@@ -1,0 +1,4 @@
+[
+  {"name": "lc-mini-v8k-25", "backbone": "models/backbones/bert-mini-v8k", "train_files": ["data/interim/train_25.jsonl"], "lr": 0.0003, "epochs": 30},
+  {"name": "lc-mini-v8k-50", "backbone": "models/backbones/bert-mini-v8k", "train_files": ["data/interim/train_50.jsonl"], "lr": 0.0003, "epochs": 25}
+]

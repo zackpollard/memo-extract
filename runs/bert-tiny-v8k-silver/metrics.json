@@ -1,0 +1,52 @@
+{
+  "torch": {
+    "kind": "torch",
+    "data": [
+      "data/test.jsonl"
+    ],
+    "memos": 500,
+    "rejected": 0,
+    "strict_f1": 0.7029,
+    "span_f1": 0.8224,
+    "memo_exact": 0.236,
+    "reminder_f1": 0.5856,
+    "reminder_intent_f1": 0.7001,
+    "detail_f1": 0.6625,
+    "people_f1": 0.9531,
+    "suggestions_fully_right": 0.274,
+    "latency_ms_1thread": 1.29,
+    "by_type": {
+      "ACTION": 0.7288,
+      "DATE": 0.868,
+      "EVENT": 0.7569,
+      "FACT": 0.6615,
+      "INTEREST": 0.6369,
+      "PERSON": 0.9822,
+      "RELATION": 0.9275
+    },
+    "by_style": {
+      "dictated": 0.6962,
+      "mixed": 0.7225,
+      "recap": 0.6469,
+      "shorthand": 0.6336,
+      "typed-quick": 0.7164,
+      "typed-tidy": 0.7902
+    },
+    "checks": {
+      "ACTION.action_type": 0.9573,
+      "ACTION.timing": 0.8626,
+      "EVENT.event_type": 0.9774,
+      "EVENT.followup": 0.904,
+      "FACT.fact_type": 0.9843,
+      "PERSON.pronoun": 0.9367,
+      "anchor:ACTION": 0.7536,
+      "anchor:DATE": 0.7986,
+      "owner:ACTION": 0.9005,
+      "owner:EVENT": 0.9529,
+      "owner:FACT": 0.9293,
+      "owner:INTEREST": 0.8947,
+      "owner:PERSON": 0.9812,
+      "owner:RELATION": 0.9621
+    }
+  }
+}

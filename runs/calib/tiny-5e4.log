@@ -1,0 +1,46 @@
+train 1784 (rejected 0), dev 190 (rejected 0)
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 16292.62it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: models/backbones/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"epoch": 1, "train_seconds": 2.0, "loss": 15.0244, "dev": {"strict_f1": 0.0488, "span_f1": 0.1439, "memo_exact": 0.0, "by_type": {"ACTION": 0.0, "DATE": 0.108, "EVENT": 0.0, "FACT": 0.0, "INTEREST": 0.0, "PERSON": 0.372, "RELATION": 0.0}}}
+{"epoch": 2, "train_seconds": 1.9, "loss": 9.656, "dev": {"strict_f1": 0.1784, "span_f1": 0.3236, "memo_exact": 0.0, "by_type": {"ACTION": 0.09, "DATE": 0.351, "EVENT": 0.07, "FACT": 0.13, "INTEREST": 0.0, "PERSON": 0.607, "RELATION": 0.198}}}
+{"epoch": 3, "train_seconds": 1.9, "loss": 6.148, "dev": {"strict_f1": 0.1998, "span_f1": 0.3668, "memo_exact": 0.0, "by_type": {"ACTION": 0.133, "DATE": 0.353, "EVENT": 0.106, "FACT": 0.17, "INTEREST": 0.0, "PERSON": 0.641, "RELATION": 0.45}}}
+{"epoch": 4, "train_seconds": 2.2, "loss": 4.5008, "dev": {"strict_f1": 0.2564, "span_f1": 0.4552, "memo_exact": 0.0105, "by_type": {"ACTION": 0.198, "DATE": 0.515, "EVENT": 0.205, "FACT": 0.209, "INTEREST": 0.0, "PERSON": 0.786, "RELATION": 0.5}}}
+{"epoch": 5, "train_seconds": 2.1, "loss": 3.5798, "dev": {"strict_f1": 0.3206, "span_f1": 0.5391, "memo_exact": 0.0158, "by_type": {"ACTION": 0.287, "DATE": 0.606, "EVENT": 0.301, "FACT": 0.229, "INTEREST": 0.133, "PERSON": 0.851, "RELATION": 0.591}}}
+{"epoch": 6, "train_seconds": 1.9, "loss": 2.8951, "dev": {"strict_f1": 0.3454, "span_f1": 0.5756, "memo_exact": 0.0158, "by_type": {"ACTION": 0.344, "DATE": 0.656, "EVENT": 0.362, "FACT": 0.325, "INTEREST": 0.245, "PERSON": 0.881, "RELATION": 0.614}}}
+{"epoch": 7, "train_seconds": 2.2, "loss": 2.4577, "dev": {"strict_f1": 0.3739, "span_f1": 0.5818, "memo_exact": 0.0211, "by_type": {"ACTION": 0.352, "DATE": 0.645, "EVENT": 0.394, "FACT": 0.312, "INTEREST": 0.222, "PERSON": 0.886, "RELATION": 0.651}}}
+{"epoch": 8, "train_seconds": 2.0, "loss": 2.1708, "dev": {"strict_f1": 0.3937, "span_f1": 0.608, "memo_exact": 0.0263, "by_type": {"ACTION": 0.385, "DATE": 0.685, "EVENT": 0.413, "FACT": 0.359, "INTEREST": 0.29, "PERSON": 0.901, "RELATION": 0.667}}}
+{"epoch": 9, "train_seconds": 1.9, "loss": 1.9185, "dev": {"strict_f1": 0.3901, "span_f1": 0.595, "memo_exact": 0.0263, "by_type": {"ACTION": 0.395, "DATE": 0.678, "EVENT": 0.402, "FACT": 0.326, "INTEREST": 0.31, "PERSON": 0.905, "RELATION": 0.688}}}
+{"epoch": 10, "train_seconds": 2.4, "loss": 1.7665, "dev": {"strict_f1": 0.4123, "span_f1": 0.6209, "memo_exact": 0.0368, "by_type": {"ACTION": 0.382, "DATE": 0.654, "EVENT": 0.495, "FACT": 0.373, "INTEREST": 0.338, "PERSON": 0.908, "RELATION": 0.75}}}
+{"epoch": 11, "train_seconds": 2.0, "loss": 1.5596, "dev": {"strict_f1": 0.4335, "span_f1": 0.6399, "memo_exact": 0.0579, "by_type": {"ACTION": 0.436, "DATE": 0.703, "EVENT": 0.476, "FACT": 0.429, "INTEREST": 0.4, "PERSON": 0.922, "RELATION": 0.743}}}
+{"epoch": 12, "train_seconds": 2.2, "loss": 1.4126, "dev": {"strict_f1": 0.4838, "span_f1": 0.6769, "memo_exact": 0.0526, "by_type": {"ACTION": 0.489, "DATE": 0.752, "EVENT": 0.547, "FACT": 0.441, "INTEREST": 0.474, "PERSON": 0.922, "RELATION": 0.768}}}
+{"epoch": 13, "train_seconds": 2.0, "loss": 1.2748, "dev": {"strict_f1": 0.4828, "span_f1": 0.68, "memo_exact": 0.0474, "by_type": {"ACTION": 0.515, "DATE": 0.744, "EVENT": 0.569, "FACT": 0.444, "INTEREST": 0.319, "PERSON": 0.932, "RELATION": 0.8}}}
+{"epoch": 14, "train_seconds": 2.0, "loss": 1.1666, "dev": {"strict_f1": 0.5026, "span_f1": 0.6977, "memo_exact": 0.0526, "by_type": {"ACTION": 0.508, "DATE": 0.749, "EVENT": 0.574, "FACT": 0.488, "INTEREST": 0.462, "PERSON": 0.95, "RELATION": 0.814}}}
+{"epoch": 15, "train_seconds": 2.2, "loss": 1.1048, "dev": {"strict_f1": 0.5252, "span_f1": 0.7096, "memo_exact": 0.0579, "by_type": {"ACTION": 0.529, "DATE": 0.756, "EVENT": 0.622, "FACT": 0.505, "INTEREST": 0.448, "PERSON": 0.942, "RELATION": 0.841}}}
+{"epoch": 16, "train_seconds": 2.0, "loss": 1.0082, "dev": {"strict_f1": 0.5131, "span_f1": 0.7028, "memo_exact": 0.0579, "by_type": {"ACTION": 0.551, "DATE": 0.748, "EVENT": 0.587, "FACT": 0.485, "INTEREST": 0.5, "PERSON": 0.949, "RELATION": 0.848}}}
+{"epoch": 17, "train_seconds": 1.9, "loss": 0.9499, "dev": {"strict_f1": 0.5246, "span_f1": 0.719, "memo_exact": 0.0526, "by_type": {"ACTION": 0.551, "DATE": 0.783, "EVENT": 0.605, "FACT": 0.501, "INTEREST": 0.529, "PERSON": 0.945, "RELATION": 0.877}}}
+{"epoch": 18, "train_seconds": 2.2, "loss": 0.9011, "dev": {"strict_f1": 0.5392, "span_f1": 0.7276, "memo_exact": 0.0421, "by_type": {"ACTION": 0.589, "DATE": 0.789, "EVENT": 0.622, "FACT": 0.504, "INTEREST": 0.5, "PERSON": 0.945, "RELATION": 0.862}}}
+{"epoch": 19, "train_seconds": 2.0, "loss": 0.8443, "dev": {"strict_f1": 0.5444, "span_f1": 0.7262, "memo_exact": 0.0526, "by_type": {"ACTION": 0.57, "DATE": 0.778, "EVENT": 0.621, "FACT": 0.522, "INTEREST": 0.493, "PERSON": 0.949, "RELATION": 0.899}}}
+{"epoch": 20, "train_seconds": 2.3, "loss": 0.8126, "dev": {"strict_f1": 0.5535, "span_f1": 0.7345, "memo_exact": 0.0579, "by_type": {"ACTION": 0.581, "DATE": 0.773, "EVENT": 0.643, "FACT": 0.536, "INTEREST": 0.469, "PERSON": 0.952, "RELATION": 0.905}}}
+{"epoch": 21, "train_seconds": 2.0, "loss": 0.7435, "dev": {"strict_f1": 0.5625, "span_f1": 0.7391, "memo_exact": 0.0579, "by_type": {"ACTION": 0.59, "DATE": 0.8, "EVENT": 0.651, "FACT": 0.521, "INTEREST": 0.515, "PERSON": 0.949, "RELATION": 0.889}}}
+{"epoch": 22, "train_seconds": 1.9, "loss": 0.7055, "dev": {"strict_f1": 0.5581, "span_f1": 0.7317, "memo_exact": 0.0632, "by_type": {"ACTION": 0.582, "DATE": 0.787, "EVENT": 0.64, "FACT": 0.512, "INTEREST": 0.469, "PERSON": 0.946, "RELATION": 0.923}}}
+{"epoch": 23, "train_seconds": 2.3, "loss": 0.6835, "dev": {"strict_f1": 0.5687, "span_f1": 0.7462, "memo_exact": 0.0684, "by_type": {"ACTION": 0.593, "DATE": 0.804, "EVENT": 0.654, "FACT": 0.525, "INTEREST": 0.529, "PERSON": 0.954, "RELATION": 0.916}}}
+{"epoch": 24, "train_seconds": 2.0, "loss": 0.6492, "dev": {"strict_f1": 0.5688, "span_f1": 0.7445, "memo_exact": 0.0684, "by_type": {"ACTION": 0.609, "DATE": 0.809, "EVENT": 0.629, "FACT": 0.539, "INTEREST": 0.507, "PERSON": 0.954, "RELATION": 0.913}}}
+{"epoch": 25, "train_seconds": 1.9, "loss": 0.6319, "dev": {"strict_f1": 0.5687, "span_f1": 0.7425, "memo_exact": 0.0474, "by_type": {"ACTION": 0.611, "DATE": 0.798, "EVENT": 0.652, "FACT": 0.522, "INTEREST": 0.485, "PERSON": 0.949, "RELATION": 0.912}}}
+{"epoch": 26, "train_seconds": 2.2, "loss": 0.6104, "dev": {"strict_f1": 0.5778, "span_f1": 0.7494, "memo_exact": 0.0632, "by_type": {"ACTION": 0.611, "DATE": 0.81, "EVENT": 0.652, "FACT": 0.528, "INTEREST": 0.507, "PERSON": 0.959, "RELATION": 0.93}}}
+{"epoch": 27, "train_seconds": 2.0, "loss": 0.578, "dev": {"strict_f1": 0.5789, "span_f1": 0.7542, "memo_exact": 0.0684, "by_type": {"ACTION": 0.622, "DATE": 0.81, "EVENT": 0.659, "FACT": 0.537, "INTEREST": 0.515, "PERSON": 0.961, "RELATION": 0.93}}}
+{"epoch": 28, "train_seconds": 2.1, "loss": 0.5574, "dev": {"strict_f1": 0.5734, "span_f1": 0.7509, "memo_exact": 0.0632, "by_type": {"ACTION": 0.608, "DATE": 0.817, "EVENT": 0.635, "FACT": 0.547, "INTEREST": 0.507, "PERSON": 0.962, "RELATION": 0.922}}}
+{"epoch": 29, "train_seconds": 2.1, "loss": 0.5293, "dev": {"strict_f1": 0.5784, "span_f1": 0.7507, "memo_exact": 0.0579, "by_type": {"ACTION": 0.606, "DATE": 0.809, "EVENT": 0.652, "FACT": 0.541, "INTEREST": 0.5, "PERSON": 0.961, "RELATION": 0.93}}}
+{"epoch": 30, "train_seconds": 1.9, "loss": 0.545, "dev": {"strict_f1": 0.5785, "span_f1": 0.7519, "memo_exact": 0.0579, "by_type": {"ACTION": 0.598, "DATE": 0.809, "EVENT": 0.659, "FACT": 0.548, "INTEREST": 0.5, "PERSON": 0.959, "RELATION": 0.93}}}
+best strict dev F1 0.5789

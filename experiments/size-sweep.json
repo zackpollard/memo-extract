@@ -1,0 +1,50 @@
+[
+  {
+    "name": "minilm-l6",
+    "backbone": "models/backbones/MiniLM-L6-H384-uncased",
+    "lr": 0.0003,
+    "epochs": 15
+  },
+  {
+    "name": "bert-small",
+    "backbone": "models/backbones/bert_uncased_L-4_H-512_A-8",
+    "lr": 0.0002,
+    "epochs": 15
+  },
+  {
+    "name": "bert-tiny-v8k",
+    "backbone": "models/backbones/bert-tiny-v8k",
+    "lr": 0.001,
+    "epochs": 30
+  },
+  {
+    "name": "bert-tiny",
+    "backbone": "models/backbones/bert_uncased_L-2_H-128_A-2",
+    "lr": 0.001,
+    "epochs": 30
+  },
+  {
+    "name": "bert-mini-v8k",
+    "backbone": "models/backbones/bert-mini-v8k",
+    "lr": 0.0003,
+    "epochs": 20
+  },
+  {
+    "name": "bert-mini",
+    "backbone": "models/backbones/bert_uncased_L-4_H-256_A-4",
+    "lr": 0.0003,
+    "epochs": 20
+  },
+  {
+    "name": "ettin-17m",
+    "backbone": "models/backbones/ettin-encoder-17m",
+    "lr": 0.0005,
+    "epochs": 15
+  },
+  {
+    "name": "ettin-32m",
+    "backbone": "models/backbones/ettin-encoder-32m",
+    "lr": 0.0003,
+    "epochs": 15
+  }
+]
